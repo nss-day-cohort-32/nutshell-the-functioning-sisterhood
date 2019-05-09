@@ -5,6 +5,7 @@ bin
 obj
 *.db
 *.sqlite3
+*.json
 
 
 # Created by https://www.gitignore.io/api/node,grunt,macos,visualstudiocode
