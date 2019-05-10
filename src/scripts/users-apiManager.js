@@ -10,9 +10,9 @@ const apiManager = {
     getAllUsers: () => {
         return fetch(`${apiBaseURL}/users`)
           .then(response => response.json())
-          .then(parsedResult => {
-            console.log("All users", parsedResult);
-            });
+        //   .then(parsedResult => {
+        //     console.log("All users", parsedResult);
+        //     });
     },
     getOneUser: (userId) => {
         return fetch(`${apiBaseURL}/users/${userId}`)

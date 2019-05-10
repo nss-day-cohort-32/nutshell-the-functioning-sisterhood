@@ -3,6 +3,7 @@
     Name: users-singup-buildDOM.js
     Purpose: Build sign-up for users
 */
+
 import loginForm from "./users-login-buildDOM"
 import postNewUserToDB from "./users-signup-ToDB"
 
@@ -53,8 +54,8 @@ const signUpForm = {
                     </div>
         
                     <!-- Password -->
-                    <div class="md-form">
-                        <input type="password" id="materialRegisterFormPassword" class="signup-input-password1 form-control" aria-describedby="materialRegisterFormPasswordHelpBlock" required>
+                    <div class="users-password1-input md-form">
+                        <input type="password" minlength="6" id="materialRegisterFormPassword" class="signup-input-password1 form-control" aria-describedby="materialRegisterFormPasswordHelpBlock" required>
                         <label for="materialRegisterFormPassword">Password</label>
                         <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
                         <!-- At least 8 characters and 1 digit -->
@@ -62,8 +63,8 @@ const signUpForm = {
                     </div>
 
                     <!-- Password Match-->
-                    <div class="md-form">
-                        <input type="password" id="materialRegisterFormPasswordMatch" class="signup-input-password2 form-control" aria-describedby="materialRegisterFormPasswordHelpBlock" required>
+                    <div class="users-password2-input md-form">
+                        <input type="password" minlength="6" id="materialRegisterFormPasswordMatch" class="signup-input-password2 form-control" aria-describedby="materialRegisterFormPasswordHelpBlock" required>
                         <label for="materialRegisterFormPassword">Repeat Password</label>
                         <small id="materialRegisterFormPasswordHelpBlock1" class="form-text text-muted mb-4">
                         </small>
