@@ -1,3 +1,6 @@
-import sayHello from "./hello"
+import apiManager from "./users-apiManager"
+import signUpForm from "./users-signup-buildDOM"
 
-sayHello()
+
+apiManager.getAllUsers()
+signUpForm.printToDOM()
