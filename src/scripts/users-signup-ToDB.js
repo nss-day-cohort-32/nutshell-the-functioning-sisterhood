@@ -6,6 +6,7 @@
 
 import apiManager from "./users-apiManager"
 import checkDB from "./users-signup-validation"
+import loginMethods from "./users-login"
 
 
 const postNewUserToDB = () => {
@@ -29,6 +30,7 @@ const postNewUserToDB = () => {
                     email: signUpEmail,
                     password: signUpPassword2
                 })
+                .then(loginMethods.login(signUpUserName, signUpPassword2))
             }else {
                 alert("passwords don't match")
             }

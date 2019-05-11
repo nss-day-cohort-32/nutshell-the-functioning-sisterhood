@@ -1,4 +1,4 @@
-import signUpForm from "./users-signup-buildDOM"
+import welcomeMessage from "./users-landing"
 
 
-signUpForm.printToDOM()
+welcomeMessage.printToDOM()

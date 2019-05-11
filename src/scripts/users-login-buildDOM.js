@@ -5,7 +5,7 @@
 */
 
 import signUpForm from "./users-signup-buildDOM"
-import login from "./users-login"
+import loginMethods from "./users-login"
 
 const loginForm = {
     buildLoginForm: () => {
@@ -59,7 +59,9 @@ const loginForm = {
             signUpForm.printToDOM();
         })
         document.querySelector(".users-login-button").addEventListener("click", () => {
-            login()
+            let loginUserName = document.querySelector(".login-input-userName").value;
+            let loginPassword = document.querySelector(".login-input-password").value;
+            loginMethods.login(loginUserName, loginPassword)
         })
     }
 }

@@ -4,25 +4,32 @@
     Purpose: Login users and add session storage id
 */
 
-import loginForm from "./users-login-buildDOM"
 import checkDB from "./users-signup-validation"
 
-
-const login = () => {
-    let loginUserName = document.querySelector(".login-input-userName").value;
-    let loginPassword = document.querySelector(".login-input-password").value;
-    //validation conditions
-    checkDB.getUserPassword(loginPassword)
-    .then(foundPassword=> {
-        checkDB.getUserName(loginUserName)
-        .then(foundUserName => {
-        if(foundUserName && foundPassword){
-          console.log("successful login")
+let loginMethods = {
+    login: (loginUserName, loginPassword) => {
+        //validation conditions
+        checkDB.getUserNameAndPassword(loginUserName, loginPassword)
+        .then(foundUser => {
+        if(foundUser !== null){
+            console.log("what is foundUser", foundUser)
+            console.log("successful login")
+            sessionStorage.setItem("user", JSON.stringify(foundUser));
         }else {
             alert("Username or password not a match")
         }
-    })
-    })
+        })
+    },
+    getLoggedInUser: () => {
+        let userSession = sessionStorage.getItem("user");
+        if(userSession != null && userSession != ""){
+            return JSON.parse(userSession);
+        }
+
+        return null;
+    }
 }
 
-export default login
+//get user id = getLoggedInUser.id
+
+export default loginMethods

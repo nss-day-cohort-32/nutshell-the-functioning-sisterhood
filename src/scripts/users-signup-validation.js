@@ -30,15 +30,15 @@ const checkDB = {
             return foundUserName;
         })
     },
-    getUserPassword: (password) => {
-        let foundPassword = false;
+    getUserNameAndPassword: (username, password) => {
+        let foundUser = null;
         return apiManager.getAllUsers().then((users) => {
             users.forEach(user => {
-                if(user.password == password) {
-                    foundPassword = true;
+                if(user.userName == username && user.password == password) {
+                    foundUser = user
                 }
             })
-            return foundPassword;
+            return foundUser;
         })
     }
 }

@@ -6,6 +6,7 @@
 
 import loginForm from "./users-login-buildDOM"
 import postNewUserToDB from "./users-signup-ToDB"
+import loginMethods from "./users-login"
 
 const signUpForm = {
     buildSignUpForm: () => {
