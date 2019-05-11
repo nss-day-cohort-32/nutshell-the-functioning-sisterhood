@@ -5,6 +5,7 @@
 */
 
 import signUpForm from "./users-signup-buildDOM"
+import login from "./users-login"
 
 const loginForm = {
     buildLoginForm: () => {
@@ -23,18 +24,18 @@ const loginForm = {
                 <!-- Username -->
                 <form class="text-center" style="color: #757575;">
                 <div class="users-input-username md-form"">
-                    <input type="text" id="materialRegisterFormUsername" class="signup-input-userName form-control" required>
+                    <input type="text" id="materialRegisterFormUsername" class="login-input-userName form-control" required>
                     <label for="materialLoginFormUsername">Username</label>
                 </div>
 
                 <!-- Password -->
                 <div class="md-form">
-                    <input type="password" id="materialLoginFormPassword" class="form-control">
+                    <input type="password" id="materialLoginFormPassword" class="login-input-password form-control">
                     <label for="materialLoginFormPassword">Password</label>
                 </div>
 
                 <!-- Login button -->
-                <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Login</button>
+                <button class="users-login-button btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Login</button>
 
                 <!-- Register -->
                 <p>Not a member?
@@ -57,8 +58,14 @@ const loginForm = {
         document.querySelector(".return-signup-button-submit").addEventListener("click", () => {
             signUpForm.printToDOM();
         })
+        document.querySelector(".users-login-button").addEventListener("click", () => {
+            login()
+        })
     }
 }
 
+//once logged in there will be a user id, the fucntion that logs a person in will also set session storage
+//sessionStorage.setItem("key", "value") ie - "userId", "1"
+//.getItem()
 
 export default loginForm

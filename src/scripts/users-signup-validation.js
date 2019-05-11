@@ -8,18 +8,37 @@ import apiManager from "./users-apiManager"
 
 
 const checkDB = {
-    getUserEmail: () => {
+    getUserEmail: (email) => {
+        let foundEmail = false;
         return apiManager.getAllUsers().then((users) => {
             users.forEach(user => {
-                console.log(user.email)
-            });
+                if(user.email == email) {
+                    foundEmail = true;
+                }
+            })
+            return foundEmail;
         })
     },
-    getUserName: () => {
+    getUserName: (userName) => {
+        let foundUserName = false;
         return apiManager.getAllUsers().then((users) => {
             users.forEach(user => {
-                console.log(user.userName)
-            });
+                if(user.userName == userName) {
+                    foundUserName = true;
+                }
+            })
+            return foundUserName;
+        })
+    },
+    getUserPassword: (password) => {
+        let foundPassword = false;
+        return apiManager.getAllUsers().then((users) => {
+            users.forEach(user => {
+                if(user.password == password) {
+                    foundPassword = true;
+                }
+            })
+            return foundPassword;
         })
     }
 }
