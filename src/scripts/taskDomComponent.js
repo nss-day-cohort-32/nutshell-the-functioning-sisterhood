@@ -56,14 +56,6 @@ const createListItems = () => {
         createTask(bottomContainer)
     })
 
-        // create edit button
-        let editFrag = document.createDocumentFragment()
-        let editButton = document.createElement("button")
-        editButton.textContent = "Edit"
-        editButton.className = "btn btn-outline-secondary task-edit-btn"
-        editFrag.appendChild(editButton)
-        bottomContainer.appendChild(editFrag)
-
         // create complete button
         let completeFrag = document.createDocumentFragment()
         let completeButton = document.createElement("button")
@@ -170,7 +162,7 @@ const createListItems = () => {
                 })
 
                 let deleteButtonClick = document.querySelector(".task-delete-btn")
-                console.log(deleteButtonClick)
+                // console.log(deleteButtonClick)
                 deleteButtonClick.addEventListener("click", function (event) {
                     for (let box of checkboxes) {
                         if (box.checked === true) {

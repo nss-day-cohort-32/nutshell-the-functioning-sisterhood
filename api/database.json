@@ -86,17 +86,16 @@
       "id": 2,
       "userId": 2,
       "task": "Beat up Shelley",
-      "taskCompleted": true,
+      "taskCompleted": false,
       "dueDate": "5/17/19",
       "priorityLevel": 3
     },
     {
-      "id": 5,
-      "userId": 5,
-      "task": "Pick up that new book you've been wanting to read",
-      "taskCompleted": false,
-      "dueDate": "n/a",
-      "priorityLevel": 3
+      "task": "Sleep",
+      "dueDate": "today",
+      "priorityLevel": "1",
+      "taskCompleted": true,
+      "id": 5
     }
   ],
   "events": [

@@ -64,6 +64,11 @@
 .task-new-form {
     padding: 2em;
 }
+.task-save-btn {
+display: flex;
+align-self: flex-end;
+justify-content: center;
+}
 
 /* EMILY'S CSS ENDS
 /* users-feed-carousel START */
