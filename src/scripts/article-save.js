@@ -2,7 +2,7 @@ import articleAPI from "./article-calls"
 import populatePage from "./article-populate";
 
 const articleFunctions = {
-    clearSubmitForm: () => {
+  clearSubmitForm: () => {
     document.getElementById("article-title").value = "x";
     document.getElementById("article-synopsis").value = "x";
     document.getElementById("article-url").value = "x";
@@ -17,18 +17,18 @@ const articleFunctions = {
     };
     // getting the database
     articleAPI.saveArticle(newArticleObject)
-        .then(result => {
-            console.log(result);
-            articleAPI.getAllArticles()
-            .then(allResults => {
+      .then(result => {
+        console.log(result);
+        articleAPI.getAllArticles()
+          .then(allResults => {
             populatePage(allResults);
-            })
-        }
-        )
+          })
+      }
+      )
   },
   saveArticleBtn: () => {
     console.log("save button clicked");
-    const rightColumn = document.querySelector(".right-output-container")
+    const rightColumn = document.querySelector(".news-right-output-container")
     let mySaved = articleFunctions.saveNewArticleObject();
     rightColumn.innerHTML += mySaved
   },

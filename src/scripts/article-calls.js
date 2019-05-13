@@ -4,6 +4,7 @@ const articleAPI = {
   getAllArticles: function() {
     return fetch(apibaseUrl).then(results => results.json());
   },
+
   getOneArticle: function(articleId) {
     return fetch(`${apibaseUrl}/${articleId}`, {
       method: "GET",
@@ -12,6 +13,7 @@ const articleAPI = {
       }
     }).then(response => response.json());
   },
+
   saveArticle: function(articleObject) {
     return fetch(`${apibaseUrl}`, {
       method: "POST",
@@ -21,6 +23,7 @@ const articleAPI = {
       body: JSON.stringify(articleObject)
     }).then(response => response.json());
   },
+
   deleteArticle: function(articleId) {
     return fetch(`${apibaseUrl}/${articleId}`, {
       method: "DELETE",
@@ -29,6 +32,7 @@ const articleAPI = {
       }
     }).then(response => response.json());
   },
+
   editArticle: function(articleId, articleObject) {
     return fetch(`${apibaseUrl}/${articleId}`, {
       method: "PUT",
@@ -38,6 +42,7 @@ const articleAPI = {
       body: JSON.stringify(articleObject)
     }).then(response => response.json());
   }
+
 };
 
 export default articleAPI

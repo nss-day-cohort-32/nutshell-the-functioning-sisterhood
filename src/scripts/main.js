@@ -1,10 +1,12 @@
 import article from "./article"
-import articleCalls from "./article-calls"
+import articleAPI from "./article-calls"
 import welcomeMessage from "./users-landing"
 import userFeed from "./users-feed.js"
 import usersAPImanager from "./users-apiManager.js"
 import loginMethods from "./users-login"
 import usersLogOut from "./users-logOut"
+import theInputFormForDOM from "./article-form"
+import populatePage from "./article-populate"
 
 
 
@@ -17,5 +19,15 @@ if(loginMethods.getLoggedInUser() !== null) {
 }
 
 article()
-articleCalls()
+articleAPI()
 
+
+  articleAPI.getAllArticles()
+  .then(
+      (allOfTheArticles) => {
+          console.log("the articles", allOfTheArticles);
+          populatePage(allOfTheArticles);
+      }
+  )
+
+theInputFormForDOM.printToDOM()

@@ -41,16 +41,16 @@ const theInputFormForDOM = {
       `
   },
   printToDOM: () => {
-    const leftColumn = document.querySelector("#news");
+    const leftColumn = document.querySelector(".news-main-output-container");
     let myForm = theInputFormForDOM.displayFormAsHTML();
     leftColumn.innerHTML += myForm
     document.getElementById("save-article-btn").addEventListener("click",
-        articleFunctions.saveArticleBtn)
-      }
-    }
+      articleFunctions.saveArticleBtn)
+  }
+}
 
 document.getElementById("edit-article-btn").addEventListener("click",
-      editFunction.editArticleBtn)
+  editFunction.editArticleBtn)
 
 
 

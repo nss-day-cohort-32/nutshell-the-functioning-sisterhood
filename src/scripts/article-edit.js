@@ -2,7 +2,7 @@ import articleAPI from "./article-calls"
 import populatePage from "./article-populate";
 
 const editFunction = {
-editNewArticleObject: () => {
+  editNewArticleObject: () => {
     const editObject = {
       title: document.getElementById("article-title").value,
       synopsis: document.getElementById("article-synopsis").value,
@@ -12,18 +12,18 @@ editNewArticleObject: () => {
     };
     // getting the database
     articleAPI.editArticle(editObject)
-        .then(result => {
-            console.log(result);
-            articleAPI.editArticle()
-            .then(allResults => {
+      .then(result => {
+        console.log(result);
+        articleAPI.editArticle()
+          .then(allResults => {
             populatePage(allResults);
-            })
-        }
-        )
+          })
+      }
+      )
   },
   editArticleBtn: () => {
     console.log("edit button clicked");
-    const rightColumn = document.querySelector(".right-output-container")
+    const rightColumn = document.querySelector(".news-right-output-container")
     let edit = editFunction.editNewArticleObject();
     rightColumn.innerHTML += edit
   },

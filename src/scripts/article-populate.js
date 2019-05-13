@@ -1,7 +1,7 @@
 const populatePage = (articleArray) => {
     let newDiv = document.createElement("div")
     newDiv.innerHTML = articleArray.map(makeGrid).join("");
-    document.querySelector(".right-output-container").append(newDiv);
+    document.querySelector(".news-right-output-container").append(newDiv);
 }
 
 const makeGrid = (news) => {
@@ -18,4 +18,4 @@ const makeGrid = (news) => {
     `
 }
 
- export default populatePage
+export default populatePage

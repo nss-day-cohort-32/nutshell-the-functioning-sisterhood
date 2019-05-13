@@ -15,7 +15,7 @@ import articleAPI from "./article-calls"
 
 
 let leftArticleForm = document.createElement("div");
-  leftArticleForm.innerHTML = `
+leftArticleForm.innerHTML = `
   <div id="leftColumn">
         <h1>Submit Your Article</h1>
         <fieldset class="submit-article">
@@ -40,10 +40,10 @@ const saveArticleBtn = document.getElementById("save-article-btn");
 
 const article = {
   clearSubmitForm: () => {
-    document.getElementById("article-title").value = "";
-    document.getElementById("article-synopsis").value = "";
-    document.getElementById("article-url").value = "";
-    document.getElementById("article-img").value = "";
+    document.getElementById("article-title").value = "x";
+    document.getElementById("article-synopsis").value = "x";
+    document.getElementById("article-url").value = "x";
+    document.getElementById("article-img").value = "x";
   },
   saveNewArticleObject: () => {
     const newArticleObject = {
@@ -56,7 +56,7 @@ const article = {
   },
 }
 saveArticleBtn.addEventListener("click", () => {
-article.saveNewArticleObject();
+  article.saveNewArticleObject();
 });
 
 article.clearSubmitForm();
