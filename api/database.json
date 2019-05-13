@@ -93,6 +93,19 @@
       "title": "Put a Button on It and Call it Art",
       "eventDate": "2019-06-08",
       "description": "All the ways buttons and event listeners are best friends."
+    },
+    {
+      "title": "A Moment in Time",
+      "eventDate": "2019-05-24",
+      "description": "Using Moment Js to make your dates more attractive so you can throw away your beer goggles.",
+      "id": 5
+    },
+    {
+      "title": "Tester",
+      "eventDate": "2019-05-13",
+      "description": "I hit MVP",
+      "userId": 1,
+      "id": 6
     }
   ]
 }

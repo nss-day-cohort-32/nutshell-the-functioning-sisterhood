@@ -7,6 +7,7 @@ import eventButtons from "./eventsSaveNewEvent";
 import eventsAPIManager from "./eventsApiManager";
 import buildEventsDOM from "./eventsDOMbuilder";
 import displayEvents from "./eventsDOMDisplay";
+import loginMethods from "./users-login"
 
 const displayForm = {
     displayFormHTML: () => {
@@ -19,7 +20,7 @@ const displayForm = {
 
         <div class="form-group">
             <label for="eventDateInput">Event Date: </label>
-            <input type="text" class="form-control" id="eventDateInput" placedholder="Event Date" required></input>
+            <input type="date" class="form-control" id="eventDateInput" placedholder="Event Date" required></input>
         </div>
 
         <div class="form-group">
@@ -27,7 +28,7 @@ const displayForm = {
             <input type="text" class="form-control" id="eventDescriptionInput" placedholder="Event Description" required></input>
         </div>
     </form>
-    <button type="button" class="saveNewEventBtn btn btn-primary">Save</button>
+    <button type="button" class="saveNewEventBtn btn btn-outline-primary">Save</button>
     `
     },
 
@@ -52,7 +53,7 @@ const displayForm = {
     </form>
     <button type="button" class="updateEventBtn btn btn-primary">Update</button>
     `
-    document.querySelector(".left-output-container").innerHTML = eventFormHTML;
+    document.querySelector(".events-left-output-container").innerHTML = eventFormHTML;
     document.querySelector(".updateEventBtn").addEventListener("click", () => {
         let titleInput = document.getElementById("eventNameInput").value
         let dateInput = document.getElementById("eventDateInput").value
@@ -60,7 +61,8 @@ const displayForm = {
         eventsAPIManager.editEvent(editEventId, {
           title: titleInput,
           eventDate: dateInput,
-          description: descriptionInput
+          description: descriptionInput,
+          userId: loginMethods.getLoggedInUser().id
         }).then(() => {
           displayEvents();
         })
@@ -69,7 +71,7 @@ const displayForm = {
 },
 
     displayFormEvents: () => {
-        const outputEl = document.querySelector(".left-output-container");
+        const outputEl = document.querySelector(".events-left-output-container");
         let eventHTML = displayForm.displayFormHTML();
         outputEl.innerHTML = eventHTML;
         document.querySelector(".saveNewEventBtn").addEventListener("click", () => {

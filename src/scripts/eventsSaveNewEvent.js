@@ -7,6 +7,7 @@ import eventsAPIManager from "./eventsApiManager"
 import displayForm from "./eventsNewForm"
 import displayEvents from "./eventsDOMDisplay"
 import buildEventsDOM from "./eventsDOMbuilder";
+import loginMethods from "./users-login"
 
 const buttonEvents = {
   editEvent: () => {
@@ -25,7 +26,8 @@ const buttonEvents = {
     eventsAPIManager.createEvent({
       title: titleInput,
       eventDate: dateInput,
-      description: descriptionInput
+      description: descriptionInput,
+      userId: loginMethods.getLoggedInUser().id
     })
     .then(displayEvents);
     document.getElementById("eventForm").reset();
