@@ -24,7 +24,7 @@ const API = {
         })
     },
     createTaskData: function (taskToSave) {
-        fetch(`${apiUrl}/tasks`, {
+        return fetch(`${apiUrl}/tasks`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

@@ -1,13 +1,12 @@
-<<<<<<< HEAD
 /* EMILY'S CSS BEGINS */
 
-.task-list-1 {
+.task-list-1, #lowPriority {
     color: green;
 }
-.task-list-2 {
+.task-list-2, #mediumPriority {
     color: goldenrod;
 }
-.task-list-3 {
+.task-list-3, #highPriority {
     color: red;
 }
 .task-header-container {
@@ -62,9 +61,11 @@
 .text-muted {
     display: flex;
 }
+.task-new-form {
+    padding: 2em;
+}
 
 /* EMILY'S CSS ENDS
-=======
 /* users-feed-carousel START */
 .carousel-item img {
     margin:10px;
@@ -94,4 +95,3 @@
     .block4{max-width:240px;}   
 }
 /* users-feed-carousel END */
->>>>>>> master
