@@ -6,7 +6,7 @@
       "lastName": "Arnold",
       "userName": "dogs4life",
       "email": "dogs4life@mymail.com",
-      "password": "easypassword"
+      "password": "hdo396ld"
     },
     {
       "id": 2,
@@ -31,54 +31,6 @@
       "userName": "hundo-mom",
       "email": "i-love-dogs@mymail.com",
       "password": "fdgq69"
-    },
-    {
-      "firstName": "Corey",
-      "lastName": "Arnold",
-      "userName": "corey1025",
-      "email": "corey1025@gmail.com",
-      "password": "corey",
-      "id": 5
-    },
-    {
-      "firstName": "Cavy",
-      "lastName": "Baby",
-      "userName": "cavybaby",
-      "email": "i.chase.cats@dogs.com",
-      "password": "cavy",
-      "id": 6
-    },
-    {
-      "firstName": "Cavy",
-      "lastName": "Baby",
-      "userName": "cavy-doggo",
-      "email": "i.chase.cats@dogs.com",
-      "password": "cavy",
-      "id": 7
-    },
-    {
-      "firstName": "Cavy",
-      "lastName": "Baby",
-      "userName": "cavy-doggo",
-      "email": "i.chase.cats@dogs.com",
-      "password": "cavy123",
-      "id": 8
-    },
-    {
-      "firstName": "Shelley",
-      "lastName": "tester",
-      "userName": "adlfhjga0",
-      "email": "dogs4life@mymail.com",
-      "password": "123456",
-      "id": 9
-    },
-    {
-      "firstName": "Shelley",
-      "lastName": "Arnold",
-      "userName": "dogs44life",
-      "email": "dogs44life@mymail.com",
-      "password": "123456",
-      "id": 10
     }
   ],
   "messages": [
