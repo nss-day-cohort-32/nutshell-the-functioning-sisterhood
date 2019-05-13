@@ -22,7 +22,7 @@ const userList = {
                             <p>User username from all api call</p>
                         </div>
                         <div class="col-md-3 col-sm-3">
-                            <button class="btn btn-outline-primary pull-right">Add Friend</button>
+                            <button class="btn btn-outline-secondary pull-right">Add Friend</button>
                         </div>
                         </div>
                     </div>

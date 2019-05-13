@@ -27,13 +27,13 @@ const createListItems = () => {
     // create right row
     const rightRowFrag = document.createDocumentFragment()
     let rightRowEl = document.createElement("div")
-    rightRowEl.className = "row"
+    rightRowEl.className = "row task-row"
     rightRowFrag.appendChild(rightRowEl)
 
     // create left row
     const leftRowFrag = document.createDocumentFragment()
     let leftRowEl = document.createElement("div")
-    leftRowEl.className = "row"
+    leftRowEl.className = "row task-row"
     leftRowFrag.appendChild(leftRowEl)
     leftContainer.appendChild(leftRowFrag)
     rightContainer.appendChild(rightRowFrag)
@@ -48,7 +48,7 @@ const createListItems = () => {
     // create new task button
     let newTaskFrag = document.createDocumentFragment();
     let newTaskBtn = document.createElement("button");
-    newTaskBtn.className = "btn btn-outline-secondary new-task-btn"
+    newTaskBtn.className = "btn btn-outline-secondary task-buttons new-task-btn"
     newTaskBtn.innerHTML += "+ New Task"
     newTaskFrag.appendChild(newTaskBtn)
     bottomContainer.appendChild(newTaskFrag)
@@ -60,7 +60,7 @@ const createListItems = () => {
         let completeFrag = document.createDocumentFragment()
         let completeButton = document.createElement("button")
         completeButton.textContent = "Complete"
-        completeButton.className = "btn btn-outline-secondary task-complete-btn"
+        completeButton.className = "btn btn-outline-secondary task-buttons task-complete-btn"
         completeFrag.appendChild(completeButton)
         bottomContainer.appendChild(completeFrag)
 
@@ -68,7 +68,7 @@ const createListItems = () => {
         let incompleteFrag = document.createDocumentFragment()
         let incompleteButton = document.createElement("button")
         incompleteButton.textContent = "Incomplete"
-        incompleteButton.className = "btn btn-outline-secondary task-incomplete-btn"
+        incompleteButton.className = "btn btn-outline-secondary task-buttons task-incomplete-btn"
         incompleteFrag.appendChild(incompleteButton)
         bottomContainer.appendChild(incompleteFrag)
 
@@ -76,7 +76,7 @@ const createListItems = () => {
         let deleteFrag = document.createDocumentFragment()
         let deleteButton = document.createElement("button")
         deleteButton.textContent = "Delete"
-        deleteButton.className = "btn btn-outline-secondary task-delete-btn"
+        deleteButton.className = "btn btn-outline-secondary task-buttons task-delete-btn"
         deleteFrag.appendChild(deleteButton)
         bottomContainer.appendChild(deleteFrag)
 

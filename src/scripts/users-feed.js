@@ -45,7 +45,7 @@ const userFeed = {
                 <p class="card-text">Friend username maybe?</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-outline-primary">Find Out More!</a>
+                <a href="#" class="btn btn-outline-secondary">Find Out More!</a>
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@ const userFeed = {
                 <p class="card-text">News description</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-outline-primary">Find Out More!</a>
+                <a href="#" class="btn btn-outline-secondary">Find Out More!</a>
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@ const userFeed = {
                 <p class="card-text">Task text content</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-outline-primary">Find Out More!</a>
+                <a href="#" class="btn btn-outline-secondary">Find Out More!</a>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ const userFeed = {
                 <p class="card-text">Event description</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-outline-primary">Find Out More!</a>
+                <a href="#" class="btn btn-outline-secondary">Find Out More!</a>
               </div>
             </div>
           </div>

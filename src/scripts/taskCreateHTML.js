@@ -4,7 +4,7 @@ import createListItems from "./taskDomComponent"
     const saveBtnFrag = document.createDocumentFragment()
     const saveBtnHTML = document.createElement("button")
     saveBtnHTML.textContent = "Save"
-    saveBtnHTML.className = "btn btn-outline-secondary task-save-btn"
+    saveBtnHTML.className = "btn btn-outline-secondary task-buttons task-save-btn"
     saveBtnFrag.appendChild(saveBtnHTML)
 
 const createNewTaskForm = (container) => {

@@ -13,22 +13,22 @@ const displayForm = {
     displayFormHTML: () => {
     return `
     <form id="eventForm">
-        <div class="form-group">
+        <div class="form-group w-75">
             <label for="eventNameInput">Event Title: </label>
             <input type="text" class="form-control" id="eventNameInput" placedholder="Event Title" required></input>
         </div>
         <!-- -->
-        <div class="form-group">
+        <div class="form-group w-75">
             <label for="eventDateInput">Event Date: </label>
             <input type="date" class="form-control" id="eventDateInput" placedholder="Event Date" required></input>
         </div>
 
-        <div class="form-group">
+        <div class="form-group w-75">
             <label for="eventDescriptionInput">Event Description: </label>
             <input type="text" class="form-control" id="eventDescriptionInput" placedholder="Event Description" required></input>
         </div>
     </form>
-    <button type="button" class="saveNewEventBtn btn btn-outline-primary">Save</button>
+    <button type="button" class="saveNewEventBtn btn btn-outline-secondary">Save</button>
     `
     },
 
@@ -36,17 +36,17 @@ const displayForm = {
     return eventsAPIManager.getOneEvent(editEventId).then((event) => {
         const eventFormHTML = `
     <form id="eventForm">
-        <div class="form-group">
+        <div class="form-group w-75">
             <label for="eventNameInput">Event Title: </label>
             <input type="text" class="form-control" id="eventNameInput" placedholder="Event Title" value="${event.title}"required></input>
         </div>
 
-        <div class="form-group">
+        <div class="form-group w-75">
             <label for="eventDateInput">Event Date: </label>
             <input type="text" class="form-control" id="eventDateInput" placedholder="Event Date" value="${event.eventDate}"required></input>
         </div>
 
-        <div class="form-group">
+        <div class="form-group w-75">
             <label for="eventDescriptionInput">Event Description: </label>
             <input type="text" class="form-control" id="eventDescriptionInput" placedholder="Event Description" value=${event.description}required></input>
         </div>
