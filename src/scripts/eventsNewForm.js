@@ -17,7 +17,7 @@ const displayForm = {
             <label for="eventNameInput">Event Title: </label>
             <input type="text" class="form-control" id="eventNameInput" placedholder="Event Title" required></input>
         </div>
-
+        <!-- -->
         <div class="form-group">
             <label for="eventDateInput">Event Date: </label>
             <input type="date" class="form-control" id="eventDateInput" placedholder="Event Date" required></input>
