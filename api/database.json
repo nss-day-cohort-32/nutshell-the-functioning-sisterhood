@@ -1,77 +1,111 @@
 {
-    "users": [
-        {
-        "id": 1,
-        "firstName": "Shelley",
-        "lastName": "Arnold",
-        "userName": "dogs4life",
-        "email": "dogs4life@mymail.com",
-        "password": "hdo396ld"
-        },
-        {
-        "id": 2,
-        "firstName": "Emily",
-        "lastName": "Loggins",
-        "userName": "tonks_will_survive",
-        "email": "fishtea@mymail.com",
-        "password": "kf49f5p"
-        },
-        {
-        "id": 3,
-        "firstName": "Ellie",
-        "lastName": "Ash",
-        "userName": "ellieAsh",
-        "email": "ellie.ash@mymail.com",
-        "password": "kkdhv83"
-        },
-        {
-        "id": 4,
-        "firstName": "Heather",
-        "lastName": "Cleland",
-        "userName": "hundo-mom",
-        "email": "i-love-dogs@mymail.com",
-        "password": "fdgq69"
-        }
-    ],
-    "messages": [
-       {
-        "id": 1,
-        "userId": 1,
-        "message": "hello world"
-        }
-    ],
-    "friends": [
-        {
-        "id": 1,
-        "currentUserId": 1,
-        "friendId": 1
-        }
-    ],
-    "news": [
-        {
-        "id": 1,
-        "userId": 1,
-        "url": "www.google.com",
-        "title": "Searching is Fun",
-        "synopsis": "Google is the best search engine.",
-        "articleDate": "2019-05-08"
-        }
-    ],
-    "tasks": [
-        {
-        "id": 1,
-        "userId": 1,
-        "task": "Work as a group",
-        "taskCompleted": true
-        }
-    ],
-    "events": [
-        {
-        "id": 1,
-        "userId": 1,
-        "title": "Working on Code",
-        "eventDate": "2019-05-09",
-        "description": "Group projects make us better coders."
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Shelley",
+      "lastName": "Arnold",
+      "userName": "dogs4life",
+      "email": "dogs4life@mymail.com",
+      "password": "hdo396ld"
+    },
+    {
+      "id": 2,
+      "firstName": "Emily",
+      "lastName": "Loggins",
+      "userName": "tonks_will_survive",
+      "email": "fishtea@mymail.com",
+      "password": "kf49f5p"
+    },
+    {
+      "id": 3,
+      "firstName": "Ellie",
+      "lastName": "Ash",
+      "userName": "ellieAsh",
+      "email": "ellie.ash@mymail.com",
+      "password": "kkdhv83"
+    },
+    {
+      "id": 4,
+      "firstName": "Heather",
+      "lastName": "Cleland",
+      "userName": "hundo-mom",
+      "email": "i-love-dogs@mymail.com",
+      "password": "fdgq69"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "userId": 1,
+      "message": "hello world"
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "currentUserId": 1,
+      "friendId": 1
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "userId": 1,
+      "url": "www.google.com",
+      "title": "Searching is Fun",
+      "synopsis": "Google is the best search engine.",
+      "articleDate": "2019-05-08"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "userId": 1,
+      "task": "Work as a group",
+      "taskCompleted": true
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Working on Code",
+      "eventDate": "2019-05-09",
+      "description": "Group projects make us better coders."
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "title": "Learning More About Flexbox",
+      "eventDate": "2019-05-16",
+      "description": "Making beautiful backgrounds with CSS."
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "title": "The darkside of Bootstrap",
+      "eventDate": "2019-06-01",
+      "description": "Learning about the ways Bootstrap doesn't always place nice."
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "title": "Put a Button on It and Call it Art",
+      "eventDate": "2019-06-08",
+      "description": "All the ways buttons and event listeners are best friends."
+    },
+    {
+      "title": "A Moment in Time",
+      "eventDate": "2019-05-24",
+      "description": "Using Moment Js to make your dates more attractive so you can throw away your beer goggles.",
+      "id": 5
+    },
+    {
+      "title": "Tester",
+      "eventDate": "2019-05-13",
+      "description": "I hit MVP",
+      "userId": 1,
+      "id": 6
+    }
+  ]
 }
