@@ -1,0 +1,65 @@
+/* EMILY'S CSS BEGINS */
+
+.task-list-1 {
+    color: green;
+}
+.task-list-2 {
+    color: goldenrod;
+}
+.task-list-3 {
+    color: red;
+}
+.task-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em 0 0 1em;
+}
+.main-output-container {
+    display: table;
+    width: 100%;
+}
+.task-left-container {
+    display: grid;
+    position: relative;
+    float: left;
+    width: 40%;
+    min-width: 360px;
+    height: auto;
+    margin: 1em 1em 0em 6em;
+}
+.task-right-container {
+    display: grid;
+    position: relative;
+    float: right;
+    width: 40%;
+    min-width: 360px;
+    height: auto;
+    margin: 1em 6em 0em 0em; 
+}
+.row {
+    /* border: 2px grey solid; */
+    display: inline;
+    /* float: left; */
+    flex-direction: column;
+    /* align-content: baseline; */
+    margin-bottom: 1em;
+}
+.btn-outline-secondary {
+    /* display: flex; */
+    float: center;
+    width: 10%;
+    margin: .5em;
+}
+.task-bottom-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    float: inline-end;
+    justify-items: center;
+}
+.text-muted {
+    display: flex;
+}
+
+/* EMILY'S CSS ENDS
