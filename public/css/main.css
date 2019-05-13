@@ -36,3 +36,23 @@ img.profile-photo-lg{
 }
 
 /* Shelley Friends List CSS END*/
+
+/* Message board START*/
+
+
+
+/*Message board END */
+
+/* Heather Events List CSS START*/
+.events-left-output-container {
+  display:inline-block;
+  position: fixed;
+  margin: 20px;
+}
+
+.events-right-output-container {
+  display:inline-block;
+  margin: 20px;
+}
+
+/* Heather Events List CSS END*/
