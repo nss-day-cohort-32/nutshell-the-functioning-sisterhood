@@ -1,3 +1,10 @@
-import sayHello from "./hello"
+import displayEvents from "./eventsDOMDisplay"
+import buildEventsDOM from "./eventsDOMbuilder"
+// import editEvent from "./eventsEditEvent"
+import displayForm from "./eventsNewForm"
+import buttonEvents from "./eventsSaveNewEvent";
 
-sayHello()
+displayEvents();
+displayForm.displayFormEvents();
+displayForm.displayFormHTML();
+// buttonEvents();
