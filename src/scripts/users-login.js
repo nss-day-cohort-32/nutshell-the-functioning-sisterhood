@@ -5,6 +5,10 @@
 */
 
 import checkDB from "./users-signup-validation"
+<<<<<<< HEAD
+=======
+import userFeed from "./users-feed.js"
+>>>>>>> master
 
 let loginMethods = {
     login: (loginUserName, loginPassword) => {
@@ -15,6 +19,10 @@ let loginMethods = {
             console.log("what is foundUser", foundUser)
             console.log("successful login")
             sessionStorage.setItem("user", JSON.stringify(foundUser));
+<<<<<<< HEAD
+=======
+            userFeed.printToDOM();
+>>>>>>> master
         }else {
             alert("Username or password not a match")
         }

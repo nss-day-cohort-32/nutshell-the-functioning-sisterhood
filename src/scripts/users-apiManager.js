@@ -6,7 +6,11 @@
 
 const apiBaseURL = "http://localhost:8088"
 
+<<<<<<< HEAD
 const apiManager = {
+=======
+const usersAPImanager = {
+>>>>>>> master
     getAllUsers: () => {
         return fetch(`${apiBaseURL}/users`)
           .then(response => response.json())
@@ -61,4 +65,8 @@ const apiManager = {
         }
 }
 
+<<<<<<< HEAD
 export default apiManager
+=======
+export default usersAPImanager
+>>>>>>> master
