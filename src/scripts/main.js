@@ -11,5 +11,5 @@ if(loginMethods.getLoggedInUser() !== null) {
     usersLogOut();
 }else {
     welcomeMessage.printToDOM()
-    document.querySelector(".logout-button-main").style.display="ßnone"
+    document.querySelector(".logout-button-main").style.display="none"
 }
