@@ -99,7 +99,7 @@ const signUpForm = {
         `
     },
     printToDOM: () => {
-        const outEl = document.querySelector(".main-output-container");
+        const outEl = document.querySelector(".users-main-output-container");
         let signUpHTML = signUpForm.buildSignUpForm();
         outEl.innerHTML = signUpHTML;
         document.querySelector(".login-button-submit").addEventListener("click", () => {

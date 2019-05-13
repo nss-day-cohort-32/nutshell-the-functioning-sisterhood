@@ -23,7 +23,7 @@ const welcomeMessage = {
         `
     },
     printToDOM: () => {
-        const outEl = document.querySelector(".main-output-container");
+        const outEl = document.querySelector(".users-main-output-container");
         let welcomeHTML = welcomeMessage.buildWelcomeMessage();
         outEl.innerHTML = welcomeHTML;
         document.querySelector(".landing-button-signIn").addEventListener("click", () => {

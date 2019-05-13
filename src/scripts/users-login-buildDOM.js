@@ -52,7 +52,7 @@ const loginForm = {
         `
     },
     printToDOM: () => {
-        const outEl = document.querySelector(".main-output-container");
+        const outEl = document.querySelector(".users-main-output-container");
         let loginHTML = loginForm.buildLoginForm();
         outEl.innerHTML = loginHTML;
         document.querySelector(".return-signup-button-submit").addEventListener("click", () => {

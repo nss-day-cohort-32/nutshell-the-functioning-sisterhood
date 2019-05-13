@@ -5,6 +5,7 @@
 */
 
 import checkDB from "./users-signup-validation"
+import userFeed from "./users-feed.js"
 
 let loginMethods = {
     login: (loginUserName, loginPassword) => {
@@ -15,6 +16,7 @@ let loginMethods = {
             console.log("what is foundUser", foundUser)
             console.log("successful login")
             sessionStorage.setItem("user", JSON.stringify(foundUser));
+            userFeed.printToDOM();
         }else {
             alert("Username or password not a match")
         }
@@ -25,11 +27,10 @@ let loginMethods = {
         if(userSession != null && userSession != ""){
             return JSON.parse(userSession);
         }
-
         return null;
     }
 }
 
-//get user id = getLoggedInUser.id
+//get user id = loginMethods.getLoggedInUser().id
 
 export default loginMethods

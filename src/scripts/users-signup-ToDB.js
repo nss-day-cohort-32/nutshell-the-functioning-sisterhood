@@ -4,7 +4,7 @@
     Purpose: Build login/sign-up for users
 */
 
-import apiManager from "./users-apiManager"
+import usersAPImanager from "./users-apiManager"
 import checkDB from "./users-signup-validation"
 import loginMethods from "./users-login"
 
@@ -23,7 +23,7 @@ const postNewUserToDB = () => {
         .then(foundUserName => {
         if(!foundUserName && !foundEmail && signUpFirstName !== "" && signUpLastName !== "" && signUpEmail !== "" && signUpUserName !== "" && signUpPassword1 !== "" && signUpPassword2 !== ""){
             if(signUpPassword1 === signUpPassword2){
-                apiManager.makeUser({
+                usersAPImanager.makeUser({
                     firstName: signUpFirstName,
                     lastName: signUpLastName,
                     userName: signUpUserName,

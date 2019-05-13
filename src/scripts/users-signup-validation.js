@@ -4,13 +4,13 @@
     Purpose: Grabs info from the database for taken usernames and email addresses
 */
 
-import apiManager from "./users-apiManager"
+import usersAPImanager from "./users-apiManager"
 
 
 const checkDB = {
     getUserEmail: (email) => {
         let foundEmail = false;
-        return apiManager.getAllUsers().then((users) => {
+        return usersAPImanager.getAllUsers().then((users) => {
             users.forEach(user => {
                 if(user.email == email) {
                     foundEmail = true;
@@ -21,7 +21,7 @@ const checkDB = {
     },
     getUserName: (userName) => {
         let foundUserName = false;
-        return apiManager.getAllUsers().then((users) => {
+        return usersAPImanager.getAllUsers().then((users) => {
             users.forEach(user => {
                 if(user.userName == userName) {
                     foundUserName = true;
@@ -32,7 +32,7 @@ const checkDB = {
     },
     getUserNameAndPassword: (username, password) => {
         let foundUser = null;
-        return apiManager.getAllUsers().then((users) => {
+        return usersAPImanager.getAllUsers().then((users) => {
             users.forEach(user => {
                 if(user.userName == username && user.password == password) {
                     foundUser = user

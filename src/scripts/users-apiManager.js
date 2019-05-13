@@ -6,7 +6,7 @@
 
 const apiBaseURL = "http://localhost:8088"
 
-const apiManager = {
+const usersAPImanager = {
     getAllUsers: () => {
         return fetch(`${apiBaseURL}/users`)
           .then(response => response.json())
@@ -54,7 +54,11 @@ const apiManager = {
         {
             method: "DELETE"
         })
-    }
+    },
+    getQuote: () => {
+        return fetch("https://api.kanye.rest/")
+        .then(response => response.json());
+        }
 }
 
-export default apiManager
+export default usersAPImanager
