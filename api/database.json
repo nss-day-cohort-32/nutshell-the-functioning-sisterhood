@@ -61,8 +61,41 @@
     {
       "id": 1,
       "userId": 1,
-      "task": "Work as a group",
-      "taskCompleted": true
+      "task": "Go to the bathroom",
+      "taskCompleted": false,
+      "dueDate": "6/10/19",
+      "priorityLevel": 2
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "task": "Don't forget the groceries!!! Toilet paper, ketchup, lettuce, detergent",
+      "taskCompleted": true,
+      "dueDate": "5/12/19",
+      "priorityLevel": 1
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "task": "Feed the fish, and the dogs",
+      "taskCompleted": false,
+      "dueDate": "5/1/19",
+      "priorityLevel": 1
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "task": "Beat up Shelley",
+      "taskCompleted": false,
+      "dueDate": "5/17/19",
+      "priorityLevel": 3
+    },
+    {
+      "task": "Sleep",
+      "dueDate": "today",
+      "priorityLevel": "1",
+      "taskCompleted": true,
+      "id": 5
     }
   ],
   "events": [
