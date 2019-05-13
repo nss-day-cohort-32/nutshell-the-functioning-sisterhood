@@ -5,6 +5,7 @@ bin
 obj
 *.db
 *.sqlite3
+api/*.json
 *.json
 
 
