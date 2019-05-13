@@ -72,7 +72,7 @@ const signUpForm = {
                     </div>
         
                     <!-- Sign up button -->
-                    <button class="signup-button-submit btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign up</button>
+                    <button class="signup-button-submit btn btn btn-outline-primary btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign up</button>
                     <hr>
         
                     <!-- Terms of service -->
@@ -88,7 +88,7 @@ const signUpForm = {
                 <strong>Already a user?</strong>
                 </h6>
                 <!-- Login button -->
-                <button class="login-button-submit btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Login</button>
+                <button class="login-button-submit btn btn btn-outline-primary btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Login</button>
                 <hr>
             </div>
         

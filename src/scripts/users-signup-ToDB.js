@@ -21,7 +21,11 @@ const postNewUserToDB = () => {
     .then(foundEmail => {
         checkDB.getUserName(signUpUserName)
         .then(foundUserName => {
-        if(!foundUserName && !foundEmail && signUpFirstName !== "" && signUpLastName !== "" && signUpEmail !== "" && signUpUserName !== "" && signUpPassword1 !== "" && signUpPassword2 !== ""){
+        if(signUpFirstName == "" || signUpLastName == "" || signUpEmail == "" || signUpUserName == "" || signUpPassword1 == "" || signUpPassword2 == ""){
+            alert("Missing content")
+            return;
+        }
+        if(!foundUserName && !foundEmail){
             if(signUpPassword1 === signUpPassword2){
                 usersAPImanager.makeUser({
                     firstName: signUpFirstName,
@@ -32,10 +36,10 @@ const postNewUserToDB = () => {
                 })
                 .then(loginMethods.login(signUpUserName, signUpPassword2))
             }else {
-                alert("passwords don't match")
+                alert("Passwords don't match")
             }
         }else {
-            alert("Username or password already in use")
+            alert("Username or email already in use")
         }
     })
     })

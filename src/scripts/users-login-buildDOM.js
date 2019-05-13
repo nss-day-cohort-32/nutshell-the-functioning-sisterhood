@@ -35,11 +35,11 @@ const loginForm = {
                 </div>
 
                 <!-- Login button -->
-                <button class="users-login-button btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Login</button>
+                <button class="users-login-button  btn btn-outline-primary btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Login</button>
 
                 <!-- Register -->
                 <p>Not a member?
-                <button class="return-signup-button-submit btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Register</button>
+                <button class="return-signup-button-submit btn btn-outline-primary btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Register</button>
                 <hr>
                 
                 </form>

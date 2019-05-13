@@ -16,8 +16,8 @@ const welcomeMessage = {
             <hr class="my-4">
             <p>Shakespeare may have been one of the first to use a nutshell as a metaphor for something small, and by the 1800's the phrase in a nutshell became commonly used to mean "in a small number of words."</p>
             <p class="lead">
-            <a class="landing-button-signIn btn btn-primary btn-lg" href="#" role="button">Register</a>
-            <a class="landing-button-login btn btn-primary btn-lg" href="#" role="button">Login</a>
+            <a class="landing-button-signIn btn btn-outline-primary" href="#" role="button">Register</a>
+            <a class="landing-button-login btn btn-outline-primary s" href="#" role="button">Login</a>
             </p>
         </div>
         `

@@ -5,7 +5,7 @@
 */
 
 import usersAPImanager from "./users-apiManager"
-// import buildQuote from "./users-feed-quoteDOM"
+import loginMethods from "./users-login"
 
 const userFeed = {
     buildUserFeed: () => {
@@ -20,8 +20,8 @@ const userFeed = {
             </div>
             <!-- /.col-lg-7 -->
             <div class="col-lg-5">
-                <h1 class="font-weight-light">Welcome back userName (could use session id??)</h1>
-                <p class="quote-output"></p>
+                <h1 class="font-weight-light">Welcome back ${loginMethods.getLoggedInUser().firstName}</h1>
+                <h5 class="quote-output"></h5>
             </div>
             <!-- /.col-md-4 -->
             </div>
@@ -39,52 +39,52 @@ const userFeed = {
     
           <div class="col-lg-3 col-md-6 mb-4">
             <div class="card h-100">
-              <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+              <img class="card-img-top" src="../images/friends.jpg" alt="">
               <div class="card-body">
                 <h4 class="card-title">Friend Card</h4>
                 <p class="card-text">Friend username maybe?</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-primary">Find Out More!</a>
+                <a href="#" class="btn btn-outline-primary">Find Out More!</a>
               </div>
             </div>
           </div>
     
           <div class="col-lg-3 col-md-6 mb-4">
             <div class="card h-100">
-              <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+              <img class="card-img-top" src="../images/news.jpg" alt="">
               <div class="card-body">
                 <h4 class="card-title">News Card</h4>
                 <p class="card-text">News description</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-primary">Find Out More!</a>
+                <a href="#" class="btn btn-outline-primary">Find Out More!</a>
               </div>
             </div>
           </div>
     
           <div class="col-lg-3 col-md-6 mb-4">
             <div class="card h-100">
-              <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+              <img class="card-img-top" src="../images/tasks.jpg" alt="">
               <div class="card-body">
                 <h4 class="card-title">Tasks Card</h4>
                 <p class="card-text">Task text content</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-primary">Find Out More!</a>
+                <a href="#" class="btn btn-outline-primary">Find Out More!</a>
               </div>
             </div>
           </div>
     
           <div class="col-lg-3 col-md-6 mb-4">
             <div class="card h-100">
-              <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+              <img class="card-img-top" src="../images/events.jpg" alt="">
               <div class="card-body">
                 <h4 class="card-title">Events Card</h4>
                 <p class="card-text">Event description</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-primary">Find Out More!</a>
+                <a href="#" class="btn btn-outline-primary">Find Out More!</a>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ const userFeed = {
         .then((quote) => {
         let quoteEl = document.querySelector(".quote-output");
            quoteHtml = ` 
-           ${quote.quote}
+           Kayne West says, "${quote.quote}"
            `;
           quoteEl.textContent = quoteHtml;
        })
