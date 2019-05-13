@@ -27,13 +27,13 @@ const createListItems = () => {
     // create right row
     const rightRowFrag = document.createDocumentFragment()
     let rightRowEl = document.createElement("div")
-    rightRowEl.className = "row"
+    rightRowEl.className = "row task-row"
     rightRowFrag.appendChild(rightRowEl)
 
     // create left row
     const leftRowFrag = document.createDocumentFragment()
     let leftRowEl = document.createElement("div")
-    leftRowEl.className = "row"
+    leftRowEl.className = "row task-row"
     leftRowFrag.appendChild(leftRowEl)
     leftContainer.appendChild(leftRowFrag)
     rightContainer.appendChild(rightRowFrag)

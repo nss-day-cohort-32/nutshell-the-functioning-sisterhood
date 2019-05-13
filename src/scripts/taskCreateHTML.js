@@ -1,4 +1,5 @@
 import saveNewTask from "./taskSaveForm"
+import loginMethods from "./users-login"
 import API from "./taskApiManager"
 import createListItems from "./taskDomComponent"
     const saveBtnFrag = document.createDocumentFragment()
@@ -45,7 +46,8 @@ const createNewTaskForm = (container) => {
                 task: taskInput,
                 dueDate: dateinput,
                 priorityLevel: priorityInput,
-                taskCompleted: false
+                taskCompleted: false,
+                userId: loginMethods.getLoggedInUser().id
             }
         API.createTaskData(newTaskObj)
         createListItems()
