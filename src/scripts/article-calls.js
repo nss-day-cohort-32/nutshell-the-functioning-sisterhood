@@ -1,6 +1,6 @@
 const apibaseUrl = "http://localhost:8088/news";
 
-const API = {
+const articleAPI = {
   getAllArticles: function() {
     return fetch(apibaseUrl).then(results => results.json());
   },
@@ -40,4 +40,4 @@ const API = {
   }
 };
 
-export default API
+export default articleAPI

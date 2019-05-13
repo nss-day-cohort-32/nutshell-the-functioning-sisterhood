@@ -11,7 +11,7 @@
 // new object will have delete button
 
 // save button?
-import API from "./article-calls"
+import articleAPI from "./article-calls"
 
 
 let leftArticleForm = document.createElement("div");
@@ -52,7 +52,7 @@ const article = {
       url: document.getElementById("article-url").value,
       picture: document.getElementById("article-img").value
     };
-    API.saveArticle(newArticleObject);
+    articleAPI.saveArticle(newArticleObject);
   },
 }
 saveArticleBtn.addEventListener("click", () => {
