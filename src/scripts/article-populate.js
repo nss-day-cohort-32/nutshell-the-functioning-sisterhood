@@ -48,8 +48,8 @@ const makeGrid = (news) => {
     <p> ${news.synopsis} </p>
     <a href="${news.url}"> Go to Article </a>
     <p> ${news.dateTime} </p>
-    <button class="delete-btn" data-delete-id="${news.id}" >Delete</button>
-    <button class="edit-btn" data-edit-id="${news.id}"> Edit </button>
+    <button class="delete-btn btn btn-outline-secondary data-delete-id="${news.id}" >Delete</button>
+    <button class="edit-btn btn btn-outline-secondary data-edit-id="${news.id}"> Edit </button>
     <hr>
     </div>
     `

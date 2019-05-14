@@ -73,36 +73,74 @@
 /* EMILY'S CSS ENDS
 
 
-/* users-feed-carousel START */
-.carousel-item img {
-    margin:10px;
-}
-.block4-wrap {
-    display:flex
-}
-.block4 {
-    flex:1 0 25%;
-    background:#000;
-    color:#fff;
-}
-.my-captions{margin:10px;padding-bottom:3em}
-
-.user-feed-container {
-    margin-left: 125px;
+/* Heather Events List CSS START*/
+.events-left-output-container {
+  display:inline-block;
+  position: fixed;
+  margin: 20px;
 }
 
-
-/* fix width and make user scroll with mouse/touch to see the items */
-@media screen and (max-width:768px){
-    .block4{max-width:280px;flex:1 0 100%;overflow:hidden}  
-    .carousel{overflow:hidden;}
-    .carousel-inner{overflow-x:visible;}
+.events-right-output-container {
+  display:inline-block;
+  margin: 20px;
 }
-@media screen and (max-width:480px){
-    .block4{max-width:240px;}   
-}
-/* users-feed-carousel END */
+/* Heather Events List CSS END */
 
+
+/* Forum CSS START */
+body{
+  margin-top:20px;
+}
+
+.comment-wrapper .panel-body {
+    max-height:650px;
+    overflow:auto;
+}
+
+.comment-wrapper .media-list .media img {
+    width:64px;
+    height:64px;
+    border:2px solid #e5e7e8;
+}
+
+.comment-wrapper .media-list .media {
+    border-bottom:1px dashed #efefef;
+    margin-bottom:25px;
+}
+/* Forum CSS END */
+
+/* Landing Jumbotron/Login/Signup START */
+.jumbotron, .users-login-div, .users-signup-div, .friend-figure-container, .forum-main-container-div, .panel-heading {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* Landing Jumbotron/Login/Signup END */
+
+.nav-tabs {
+  background-color: white;
+}
+
+.my-5 {
+  margin-bottom: 20px!important;
+  margin-top: 20px!important;
+}
+
+.logout-button-main {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  z-index: 2000;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+.forum-main-container-div, .forum-secondary-container-div {
+    margin-left: 0 auto; 
+}
+
+.events-left-output-container {
+    z-index: 10;
+}
 
 /* news */
 

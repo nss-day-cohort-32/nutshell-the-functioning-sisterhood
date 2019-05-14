@@ -24,7 +24,7 @@ const theInputFormForDOM = {
            <label for="article-date">Date:</label>
            <input type="date" name="article-date" id="article-date"></input>
            <br>
-           <button id="save-article-btn">Save Article</button>
+           <button class="btn btn-outline-secondary" id="save-article-btn">Save Article</button>
          </fieldset>
        
        <br>
