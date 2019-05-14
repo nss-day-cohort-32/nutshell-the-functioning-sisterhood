@@ -3,6 +3,7 @@
 //     Name: taskDomComponent
 //     Purpose: creating DOM components and appending them to left and right containers to display "TO DO" and "COMPLETED" tasks.
 // */
+
 import createTask from "./taskCreateHTML"
 import API from "./taskApiManager"
 
@@ -137,7 +138,9 @@ const createListItems = () => {
                                         let task = parsedResult[0]
                                         task.taskCompleted = true;
                                         API.editTaskData(box.id, task)
-                                            .then(createListItems())
+                                            .then(function () {
+                                                createListItems()
+                                            })
                                     }
                                 })
                         }
@@ -154,7 +157,9 @@ const createListItems = () => {
                                         let task = parsedResult[0]
                                         task.taskCompleted = false;
                                         API.editTaskData(box.id, task)
-                                            .then(createListItems())
+                                            .then(function () {
+                                                createListItems()
+                                            })
                                     }
                                 })
                         }
@@ -172,7 +177,9 @@ const createListItems = () => {
                                         let task = parsedResult[0]
                                         console.log(task.id)
                                         API.deleteTaskData(task.id)
-                                            .then(createListItems())
+                                            .then(function () {
+                                                createListItems()
+                                            })
                                     }
                                 })
                         }

@@ -65,9 +65,9 @@
     padding: 2em;
 }
 .task-save-btn {
-display: flex;
-align-self: flex-end;
-justify-content: center;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
 }
 
 /* EMILY'S CSS ENDS
