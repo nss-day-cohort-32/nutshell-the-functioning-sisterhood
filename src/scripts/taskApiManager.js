@@ -32,9 +32,6 @@ const API = {
             body: JSON.stringify(taskToSave)
         })
         .then(response => response.json())
-        .then(parsedResult => {
-            console.log("new task", parsedResult);
-            });
     },
     deleteTaskData: function (taskId) {
         return fetch(`${apiUrl}/tasks/${taskId}`, {

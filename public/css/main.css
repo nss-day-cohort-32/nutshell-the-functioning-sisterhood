@@ -15,7 +15,7 @@
     justify-content: space-around;
     padding: 2em 0 0 1em;
 }
-.main-output-container {
+.task-main-output-container {
     display: table;
     width: 100%;
 }
@@ -37,7 +37,7 @@
     height: auto;
     margin: 1em 6em 0em 0em; 
 }
-.row {
+.task-row {
     /* border: 2px grey solid; */
     display: inline;
     /* float: left; */
@@ -45,7 +45,7 @@
     /* align-content: baseline; */
     margin-bottom: 1em;
 }
-.btn-outline-secondary {
+.task-buttons {
     /* display: flex; */
     float: center;
     width: 10%;
@@ -65,12 +65,14 @@
     padding: 2em;
 }
 .task-save-btn {
-display: flex;
-align-self: flex-end;
-justify-content: center;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
 }
 
 /* EMILY'S CSS ENDS
+
+
 /* users-feed-carousel START */
 .carousel-item img {
     margin:10px;
