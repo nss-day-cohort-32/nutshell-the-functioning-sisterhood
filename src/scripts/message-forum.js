@@ -8,7 +8,7 @@ import messageHandler from "./friends-post-message"
 const forumMessages = {
     buildMessagePost: () => {
         return `
-        <div class="row bootstrap snippets forum-main-container-div">
+        <div class="justify-content-center row bootstrap snippets forum-main-container-div">
         <div class="col-md-6 col-md-offset-2 col-sm-12">
             <div class="comment-wrapper">
                 <div class="panel panel-info">
@@ -30,8 +30,8 @@ const forumMessages = {
     },
     buildForum: (userName, message) => {
         return `
-        <div class "justify-content-md-center">
-        <ul class="forum-secondary-container col-md-6 media-list">
+        <div class='justify-content-center row'>
+        <ul class="forum-secondary-container col-md-offset-2 col-md-6 media-list">
             <li class="media">
                 <a href="#" class="pull-left">
                     <img height="42" width="42" src="../images/user.jpg" alt="" class="img-circle">
