@@ -1,38 +1,40 @@
 import articleAPI from "./article-calls"
-import populatePage from "./article-populate";
 
-const articleFunctions = {
+import submissionsAndButtons from "./article-populate";
+
+const saveFunctions = {
   clearSubmitForm: () => {
+    document.getElementById("article-id").value = "x";
     document.getElementById("article-title").value = "x";
     document.getElementById("article-synopsis").value = "x";
     document.getElementById("article-url").value = "x";
-    document.getElementById("article-img").value = "x";
   },
   saveNewArticleObject: () => {
+    const stampDate = Date();
+    const newsTime = (stampDate);
     const newArticleObject = {
       title: document.getElementById("article-title").value,
       synopsis: document.getElementById("article-synopsis").value,
       url: document.getElementById("article-url").value,
-      picture: document.getElementById("article-img").value,
+      dateTime: newsTime,
     };
     // getting the database
     articleAPI.saveArticle(newArticleObject)
-      .then(result => {
-        console.log(result);
+      .then(allResults => {
+        console.log(allResults);
         articleAPI.getAllArticles()
-          .then(allResults => {
-            populatePage(allResults);
+          .then(result => {
+            submissionsAndButtons.populatePage(result);
           })
       }
       )
   },
   saveArticleBtn: () => {
     console.log("save button clicked");
-    const rightColumn = document.querySelector(".news-right-output-container")
-    let mySaved = articleFunctions.saveNewArticleObject();
-    rightColumn.innerHTML += mySaved
+    const newsLeftContainer = document.querySelectorAll(".news-left-output-container")
+    let mySavedNews = saveFunctions.saveNewArticleObject();
+    newsLeftContainer.innerHTML = mySavedNews;
   },
 }
 
-
-export default articleFunctions
+export default saveFunctions

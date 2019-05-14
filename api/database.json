@@ -49,12 +49,7 @@
   ],
   "news": [
     {
-      "id": 1,
-      "userId": 1,
-      "url": "www.google.com",
-      "title": "Searching is Fun",
-      "synopsis": "Google is the best search engine.",
-      "articleDate": "2019-05-08"
+      "id": 1
     }
   ],
   "tasks": [

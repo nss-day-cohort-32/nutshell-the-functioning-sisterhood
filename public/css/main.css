@@ -27,3 +27,32 @@
     .block4{max-width:240px;}   
 }
 /* users-feed-carousel END */
+
+
+/* news */
+
+.news-left-output-container {
+    background-color: #E8ECEF;
+    float: left;
+    margin: 1em;
+    display: flex;
+    position: fixed;
+}
+
+.news-right-output-container {
+    float: right;
+    margin: 1em;
+    width: 50%;
+}
+
+#article-list {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1em;
+    word-wrap: break-word;
+}
+
+.submit-article {
+    display: flex;
+    align-items: flex-end;
+}
