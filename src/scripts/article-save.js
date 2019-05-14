@@ -24,6 +24,8 @@ const saveFunctions = {
         console.log(allResults);
         articleAPI.getAllArticles()
           .then(result => {
+          const articleContainer = document.querySelector(".news-right-output-container");
+          articleContainer.innerHTML = ""
             submissionsAndButtons.populatePage(result);
           })
       }

@@ -24,6 +24,15 @@ const handleDelete = (event) => {
     console.log("Let's Delete", event);
     console.log("deleteobject", event.target.getAttribute("data-delete-id"))
     articleAPI.deleteArticle(event.target.getAttribute("data-delete-id"))
+
+    .then(function() {
+        articleAPI.getAllArticles()
+        .then(result => {
+            const articleContainer = document.querySelector(".news-right-output-container");
+            articleContainer.innerHTML = ""
+              submissionsAndButtons.populatePage(result);
+            })
+    })
 }
 
 

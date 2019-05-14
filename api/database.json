@@ -146,12 +146,25 @@
   ],
   "news": [
     {
-      "id": 1,
-      "userId": 1,
+      "title": "cjehfjefhc",
+      "synopsis": " ",
+      "url": "",
+      "dateTime": "Tue May 14 2019 11:52:54 GMT-0500 (Central Daylight Time)",
+      "id": 1
+    },
+    {
+      "title": "cjehfjefhc",
+      "synopsis": " ",
       "url": "www.google.com",
-      "title": "Searching is Fun",
-      "synopsis": "Google is the best search engine.",
-      "articleDate": "2019-05-08"
+      "dateTime": "Tue May 14 2019 11:54:33 GMT-0500 (Central Daylight Time)",
+      "id": 2
+    },
+    {
+      "title": "real link",
+      "synopsis": " ",
+      "url": "https://stackoverflow.com/questions/12196885/text-flowing-out-of-div",
+      "dateTime": "Tue May 14 2019 11:55:01 GMT-0500 (Central Daylight Time)",
+      "id": 3
     }
   ],
   "tasks": [
