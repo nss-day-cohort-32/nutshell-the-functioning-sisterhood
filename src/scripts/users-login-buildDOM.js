@@ -10,7 +10,7 @@ import loginMethods from "./users-login"
 const loginForm = {
     buildLoginForm: () => {
         return `
-            <div class="users-login-div card">
+            <div class="w-50 users-login-div card">
             <h5 class="users-login-h5 card-header info-color white-text text-center py-4">
             <strong>Login</strong>
             </h5>
@@ -35,11 +35,11 @@ const loginForm = {
                 </div>
 
                 <!-- Login button -->
-                <button class="users-login-button  btn btn-outline-primary btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Login</button>
+                <button class="users-login-button  btn btn-outline-secondary btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Login</button>
 
                 <!-- Register -->
                 <p>Not a member?
-                <button class="return-signup-button-submit btn btn-outline-primary btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Register</button>
+                <button class="return-signup-button-submit btn btn-outline-secondary btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Register</button>
                 <hr>
                 
                 </form>

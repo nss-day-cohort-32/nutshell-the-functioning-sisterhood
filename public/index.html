@@ -19,27 +19,27 @@
     <header>
         <nav>
             <h1 id="main-navbar-h1">Nutshell</h1>
-            <button type="button" class="logout-button-main btn btn-outline-primary btn-sm">Log Out</button>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <button type="button" class="logout-button-main btn btn-outline-secondary btn-sm">Log Out</button>
+            <ul class="nav nav-tabs sticky-top" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    <a class="nav-link text-secondary active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link text-secondary" id="forum-tab" data-toggle="tab" href="#forum" role="tab" aria-controls="forum" aria-selected="false">Forum</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="forum-tab" data-toggle="tab" href="#forum" role="tab" aria-controls="forum" aria-selected="false">Forum</a>
+                    <a class="nav-link text-secondary" id="friends-tab" data-toggle="tab" href="#friends" role="tab" aria-controls="friends" aria-selected="false">Friends</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="friends-tab" data-toggle="tab" href="#friends" role="tab" aria-controls="friends" aria-selected="false">Friends</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="news-tab" data-toggle="tab" href="#news" role="tab" 
+                    <a class="nav-link text-secondary" id="news-tab" data-toggle="tab" href="#news" role="tab" 
                     aria-controls="news" aria-selected="false">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="tasks-tab" data-toggle="tab" href="#tasks" role="tab" 
+                    <a class="nav-link text-secondary" id="tasks-tab" data-toggle="tab" href="#tasks" role="tab" 
                     aria-controls="tasks" aria-selected="false">Tasks</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="events-tab" data-toggle="tab" href="#events" role="tab" aria-controls="events" aria-selected="false">Events</a>
+                    <a class="nav-link text-secondary" id="events-tab" data-toggle="tab" href="#events" role="tab" aria-controls="events" aria-selected="false">Events</a>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
@@ -50,9 +50,9 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="forum" role="tabpanel" aria-labelledby="forum-tab">
-                    <div class="forum-main-output-container">
-                        <div class="forum-left-output-container"></div>
-                        <div class="forum-right-output-container"></div>
+                    <div class="justify-content-md-center forum-main-container">
+                        <div class="forum-top-output-container"></div>
+                        <div class="forum-bottom-output-container"></div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="friends" role="tabpanel" aria-labelledby="friends-tab">
@@ -79,8 +79,8 @@
                 </div>
                 <div class="tab-pane fade" id="events" role="tabpanel" aria-labelledby="events-tab">      
                  <div class="events-main-output-container">
-                    <div class="events-left-output-container"></div>
-                    <div class="events-right-output-container"></div>
+                    <div class="w-40 events-left-output-container"></div>
+                    <div class="w-40 events-right-output-container"></div>
                 </div>
                 </div>
             </div>

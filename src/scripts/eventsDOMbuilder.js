@@ -22,13 +22,13 @@ const buildEventsDOM = (events) => {
                 <div class="col">
                 </div>
                 <div class="col">
-                <p>Let's Go Somewhere, ${loginMethods.getLoggedInUser().firstName}</p>
-                <h1>${event.title}</h1>
-                <h3>${event.description}</h3>
-                <h5>${event.eventDate}</h5>
-                <button id="editEventBtn" class="editEventBtn btn btn-outline-primary" data-id="${event.id}">Edit</button>
-                <button id="deleteEventBtn" class="deleteEventBtn btn btn-outline-primary" data-id="${event.id}">Delete</button>
-                <hr>
+                    <p>Let's Go Somewhere, ${loginMethods.getLoggedInUser().firstName}</p>
+                    <h1>${event.title}</h1>
+                    <h3>${event.description}</h3>
+                    <h5>${event.eventDate}</h5>
+                    <button id="editEventBtn" class="editEventBtn btn btn-outline-secondary" data-id="${event.id}">Edit</button>
+                    <button id="deleteEventBtn" class="deleteEventBtn btn btn-outline-secondary" data-id="${event.id}">Delete</button>
+                    <hr>
                 </div>
             </div>
         </div>

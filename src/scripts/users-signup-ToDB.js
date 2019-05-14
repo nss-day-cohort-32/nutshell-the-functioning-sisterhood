@@ -34,7 +34,9 @@ const postNewUserToDB = () => {
                     email: signUpEmail,
                     password: signUpPassword2
                 })
-                .then(loginMethods.login(signUpUserName, signUpPassword2))
+                .then(() => {
+                    loginMethods.login(signUpUserName, signUpPassword2)
+                })
             }else {
                 alert("Passwords don't match")
             }
