@@ -45,7 +45,7 @@
     /* align-content: baseline; */
     margin-bottom: 1em;
 }
-.btn-outline-secondary {
+.task-buttons {
     /* display: flex; */
     float: center;
     width: 10%;
@@ -71,6 +71,8 @@
 }
 
 /* EMILY'S CSS ENDS
+
+
 /* users-feed-carousel START */
 .carousel-item img {
     margin:10px;
