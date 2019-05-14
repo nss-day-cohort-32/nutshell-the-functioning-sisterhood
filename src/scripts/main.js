@@ -1,4 +1,14 @@
 import articleAPI from "./article-calls"
+import displayEvents from "./eventsDOMDisplay"
+import buildEventsDOM from "./eventsDOMbuilder"
+// import editEvent from "./eventsEditEvent"
+import displayForm from "./eventsNewForm"
+import buttonEvents from "./eventsSaveNewEvent";
+
+displayEvents();
+displayForm.displayFormEvents();
+displayForm.displayFormHTML();
+// buttonEvents();
 import welcomeMessage from "./users-landing"
 import userFeed from "./users-feed.js"
 import usersAPImanager from "./users-apiManager.js"
@@ -22,6 +32,9 @@ theInputFormForDOM.printToDOM()
 
 
 
+import taskCreate from "./taskDomComponent"
+import newTask from "./taskCreateHTML"
+import saveNewObj from "./taskSaveForm";
 
 
 
@@ -33,3 +46,9 @@ if(loginMethods.getLoggedInUser() !== null) {
     document.querySelector(".logout-button-main").style.display="none"
 }
 
+// BEGIN: Emily's code
+
+taskCreate()
+// saveNewObj()
+
+// END: Emily's code

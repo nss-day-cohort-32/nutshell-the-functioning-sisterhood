@@ -49,15 +49,53 @@
   ],
   "news": [
     {
-      "id": 1
+      "id": 1,
+      "userId": 1,
+      "url": "www.google.com",
+      "title": "Searching is Fun",
+      "synopsis": "Google is the best search engine.",
+      "articleDate": "2019-05-08"
     }
   ],
   "tasks": [
     {
       "id": 1,
       "userId": 1,
-      "task": "Work as a group",
-      "taskCompleted": true
+      "task": "Go to the bathroom",
+      "taskCompleted": false,
+      "dueDate": "6/10/19",
+      "priorityLevel": 2
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "task": "Don't forget the groceries!!! Toilet paper, ketchup, lettuce, detergent",
+      "taskCompleted": true,
+      "dueDate": "5/12/19",
+      "priorityLevel": 1
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "task": "Feed the fish, and the dogs",
+      "taskCompleted": false,
+      "dueDate": "5/1/19",
+      "priorityLevel": 1
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "task": "Beat up Shelley",
+      "taskCompleted": false,
+      "dueDate": "5/17/19",
+      "priorityLevel": 3
+    },
+    {
+      "task": "Sleep",
+      "dueDate": "today",
+      "priorityLevel": "1",
+      "taskCompleted": true,
+      "id": 5
     }
   ],
   "events": [
@@ -67,6 +105,26 @@
       "title": "Working on Code",
       "eventDate": "2019-05-09",
       "description": "Group projects make us better coders."
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "title": "Put a Button on It and Call it Art",
+      "eventDate": "2019-06-08",
+      "description": "All the ways buttons and event listeners are best friends."
+    },
+    {
+      "title": "A Moment in Time",
+      "eventDate": "2019-05-24",
+      "description": "Using Moment Js to make your dates more attractive so you can throw away your beer goggles.",
+      "id": 5
+    },
+    {
+      "title": "Tester",
+      "eventDate": "2019-05-13",
+      "description": "I hit MVP",
+      "userId": 1,
+      "id": 6
     }
   ]
 }
