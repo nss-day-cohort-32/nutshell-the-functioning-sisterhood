@@ -110,7 +110,7 @@ body{
 /* Forum CSS END */
 
 /* Landing Jumbotron/Login/Signup START */
-.jumbotron, .users-login-div, .users-signup-div {
+.jumbotron, .users-login-div, .users-signup-div, .friend-figure-container, .forum-main-container-div, .panel-heading {
   margin: 0 auto;
   margin-top: 20px;
 }
@@ -132,4 +132,8 @@ body{
   z-index: 2000;
   margin-right: 5px;
   margin-top: 3px;
+}
+
+.forum-main-container-div, .forum-secondary-container-div {
+    margin-left: 0 auto; 
 }

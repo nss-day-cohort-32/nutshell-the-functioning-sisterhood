@@ -6,6 +6,7 @@
 
 import usersAPImanager from "./users-apiManager"
 import loginMethods from "./users-login"
+import eventsAPIManager from "./eventsApiManager"
 
 const userFeed = {
     buildUserFeed: () => {
@@ -41,11 +42,10 @@ const userFeed = {
             <div class="card h-100">
               <img class="card-img-top" src="../images/friends.jpg" alt="">
               <div class="card-body">
-                <h4 class="card-title">Friend Card</h4>
-                <p class="card-text">Friend username maybe?</p>
+                <h4 class="card-title">Friends</h4>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-outline-secondary">Find Out More!</a>
+              <button type="button" class="user-feed-friends-button btn btn-outline-secondary">Find Out More!</button>
               </div>
             </div>
           </div>
@@ -54,11 +54,10 @@ const userFeed = {
             <div class="card h-100">
               <img class="card-img-top" src="../images/news.jpg" alt="">
               <div class="card-body">
-                <h4 class="card-title">News Card</h4>
-                <p class="card-text">News description</p>
+                <h4 class="card-title">News</h4>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-outline-secondary">Find Out More!</a>
+                <button type="button" class="user-feed-news-button btn btn-outline-secondary">Find Out More!</button>
               </div>
             </div>
           </div>
@@ -67,11 +66,10 @@ const userFeed = {
             <div class="card h-100">
               <img class="card-img-top" src="../images/tasks.jpg" alt="">
               <div class="card-body">
-                <h4 class="card-title">Tasks Card</h4>
-                <p class="card-text">Task text content</p>
+                <h4 class="card-title">Tasks</h4>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-outline-secondary">Find Out More!</a>
+                <button type="button" class="user-feed-tasks-button btn btn-outline-secondary">Find Out More!</button>
               </div>
             </div>
           </div>
@@ -80,11 +78,10 @@ const userFeed = {
             <div class="card h-100">
               <img class="card-img-top" src="../images/events.jpg" alt="">
               <div class="card-body">
-                <h4 class="card-title">Events Card</h4>
-                <p class="card-text">Event description</p>
+                <h4 class="card-title">Events</h4>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-outline-secondary">Find Out More!</a>
+                <button type="button" class="user-feed-events-button btn btn-outline-secondary">Find Out More!</button>
               </div>
             </div>
           </div>
@@ -101,6 +98,18 @@ const userFeed = {
         let userFeedHTML = userFeed.buildUserFeed();
         outEl.innerHTML = userFeedHTML;
         userFeed.buildQuote();
+        document.querySelector(".user-feed-friends-button").addEventListener("click", () => {
+          document.querySelector("#friends-tab").click();
+        });
+        document.querySelector(".user-feed-news-button").addEventListener("click", () => {
+          document.querySelector("#news-tab").click();
+        });
+        document.querySelector(".user-feed-tasks-button").addEventListener("click", () => {
+          document.querySelector("#tasks-tab").click();
+        });
+        document.querySelector(".user-feed-events-button").addEventListener("click", () => {
+          document.querySelector("#events-tab").click();
+        });
     },
     buildQuote: () =>  {
         let quoteHtml = "";

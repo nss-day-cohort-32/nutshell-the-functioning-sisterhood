@@ -58,7 +58,22 @@ const usersAPImanager = {
     getQuote: () => {
         return fetch("https://api.kanye.rest/")
         .then(response => response.json());
-        }
+        },
+    makeMessage: (messageObj) => {
+        return fetch(`${apiBaseURL}/messages`,
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(messageObj)
+        })
+        .then(response => response.json())
+    },
+    getAllMessages: () => {
+        return fetch(`${apiBaseURL}/messages`)
+          .then(response => response.json())
+    },
 }
 
 export default usersAPImanager

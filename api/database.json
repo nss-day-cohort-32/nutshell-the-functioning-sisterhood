@@ -37,7 +37,32 @@
     {
       "id": 1,
       "userId": 1,
-      "message": "hello world"
+      "message": "hello world",
+      "dateTime": "5/13/2019"
+    },
+    {
+      "userId": 1,
+      "message": "This is a test",
+      "id": 2,
+      "dateTime": "5/13/2019"
+    },
+    {
+      "userId": 2,
+      "message": "Now the box will clear",
+      "id": 3,
+      "dateTime": "5/13/2019"
+    },
+    {
+      "userId": 1,
+      "message": "Sweet",
+      "id": 4,
+      "dateTime": "5/13/2019"
+    },
+    {
+      "userId": 3,
+      "message": "Totes",
+      "id": 5,
+      "dateTime": "5/13/2019"
     }
   ],
   "friends": [

@@ -51,7 +51,7 @@ const displayForm = {
             <input type="text" class="form-control" id="eventDescriptionInput" placedholder="Event Description" value=${event.description}required></input>
         </div>
     </form>
-    <button type="button" class="updateEventBtn btn btn-primary">Update</button>
+    <button type="button" class="updateEventBtn btn btn-secondary">Update</button>
     `
     document.querySelector(".events-left-output-container").innerHTML = eventFormHTML;
     document.querySelector(".updateEventBtn").addEventListener("click", () => {
