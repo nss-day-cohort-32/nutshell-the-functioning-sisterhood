@@ -137,3 +137,7 @@ body{
 .forum-main-container-div, .forum-secondary-container-div {
     margin-left: 0 auto; 
 }
+
+.events-left-output-container {
+    z-index: 10;
+}

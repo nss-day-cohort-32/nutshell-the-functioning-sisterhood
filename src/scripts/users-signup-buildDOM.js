@@ -7,6 +7,7 @@
 import loginForm from "./users-login-buildDOM"
 import postNewUserToDB from "./users-signup-ToDB"
 import loginMethods from "./users-login"
+import userFeed from "./users-feed"
 
 const signUpForm = {
     buildSignUpForm: () => {
@@ -72,7 +73,7 @@ const signUpForm = {
                     </div>
         
                     <!-- Sign up button -->
-                    <button class="signup-button-submit btn btn btn-outline-secondary btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign up</button>
+                    <button class="signup-button-submit btn btn btn-outline-secondary btn-rounded btn-block my-4 waves-effect z-depth-0" type="button">Sign up</button>
                     <hr>
         
                     <!-- Terms of service -->
@@ -106,8 +107,9 @@ const signUpForm = {
             loginForm.printToDOM();
         });
         document.querySelector(".signup-button-submit").addEventListener("click", () => {
-            postNewUserToDB()
-        });
+            postNewUserToDB();
+            userFeed.printToDOM();
+        })
     }
 }
 
