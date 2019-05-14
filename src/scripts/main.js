@@ -10,7 +10,6 @@ import userList from "./friends-list"
 import theInputFormForDOM from "./article-form"
 import submissionsAndButtons from "./article-populate"
 import taskCreate from "./taskDomComponent"
-import taskCreate from "./taskDomComponent"
 import newTask from "./taskCreateHTML"
 
 
